@@ -1,0 +1,112 @@
+/* Contrast reset */
+
+h1,
+h2,
+h3,
+p,
+li {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+/* Modern Reset */
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Typography */
+
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+/* Main header and navigation */
+
+.main-header {
+  padding: 1rem;
+}
+
+.logo h2 {
+  margin-bottom: 0;
+}
+
+/* Main */
+
+main {
+  display: grid;
+  grid-column-gap: 1rem;
+  grid-template-areas:
+    ". header aside"
+    ". nav aside"
+    ". article aside";
+  grid-template-columns: 1fr 55ch 1fr;
+
+  margin-top: 2rem;
+}
+
+.content-header {
+  grid-area: header;
+}
+
+.content-nav {
+  grid-area: nav;
+
+  margin-bottom: 2rem;
+}
+
+article {
+  grid-area: article;
+}
+
+#top-picks {
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+#top-picks ol {
+  padding-left: 1.5rem;
+}
+
+aside {
+  grid-area: aside;
+
+  padding: 0 1rem;
+}
+
+.more-articles {
+  padding: 2rem;
+}
+
+/* Footer */
+
+footer {
+  padding: 1rem;
+}
